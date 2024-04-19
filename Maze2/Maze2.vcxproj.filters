@@ -21,7 +21,13 @@
     <ClCompile Include="time.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="game.cpp">
+    <ClCompile Include="gameManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +38,13 @@
     <ClInclude Include="time.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="game.h">
+    <ClInclude Include="gameManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="map.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

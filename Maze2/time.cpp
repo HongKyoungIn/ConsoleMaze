@@ -25,6 +25,5 @@ namespace global {
 		ULONGLONG GetDeltaTime() {
 			return deltaTime;
 		}
-
 	}
 }

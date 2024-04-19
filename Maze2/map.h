@@ -1,4 +1,9 @@
 #pragma once
+
+void SetMap(); // 미로맵 생성
+int** RollingArray(int MapArr[25][25],int num,int block); // 배열 회전
+void PrintMap(int PosX,int PosY); // 플레이어 기준으로 맵을 보여주는 함수(카메라)
+
 int RandomMap[][25][25] = {
 	{
 		{ 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1 },

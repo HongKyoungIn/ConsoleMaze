@@ -24,5 +24,4 @@
 void SetColor(int color);
 void CursorView(char show);
 void gotoxy(int x,int y);
-void GamePlay();
 /* ▲▲▲▲▲ 함수 선언 ▲▲▲▲▲ */

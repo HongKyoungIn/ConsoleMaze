@@ -1,22 +1,21 @@
 #include "main.h"
 #include "time.h"
-#include "game.h"
+#include "gameManager.h"
+#include "InputSystem.h"
 
 int main() {
-    global::time::InitTime();
+    myTime::InitTime();
 
     StartGame();
 
     while(IsGameRun()) {
-        global::time::UpdateTime();
+        myTime::UpdateTime();
 
         ProcessInput();
 
-        FixeUpdate();
+        FixedUpdate();
 
         Update();
-
-        PrintCountsPerSecond();
     }
 
     EndGame();
