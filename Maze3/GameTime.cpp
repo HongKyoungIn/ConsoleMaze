@@ -6,7 +6,7 @@ namespace GameTime {
 	ULONGLONG previousTime;
 	ULONGLONG currentTime;
 	ULONGLONG deltaTime;
-	ULONGLONG playStartTime; // 플레이 시작 시간
+	ULONGLONG playStartTime = 0; // 플레이 시작 시간
 
 	void InitTime() {
 		previousTime = currentTime = GetTickCount64();
