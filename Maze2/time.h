@@ -8,5 +8,5 @@ namespace myTime {
 	const float GetFrameRate();
 	const ULONGLONG GetDeltaTime();
 	int  PlayTime();
-	bool shouldProcessInput();
+	void SleepTime(unsigned int milliseconds);
 }

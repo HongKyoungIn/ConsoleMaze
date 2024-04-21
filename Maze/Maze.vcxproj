@@ -134,7 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
-    <ClInclude Include="map.h" />
+    <ClInclude Include="map1.h" />
     <ClInclude Include="Maze.h" />
     <ClInclude Include="time.h" />
   </ItemGroup>

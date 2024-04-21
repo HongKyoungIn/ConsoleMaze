@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="API.cpp" />
+    <ClCompile Include="doublebuffering.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConsoleRenderer.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="time.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,20 +139,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="gameManager.cpp" />
-    <ClCompile Include="InputSystem.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="map.cpp" />
-    <ClCompile Include="time.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="gameManager.h" />
-    <ClInclude Include="InputSystem.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="map.h" />
-    <ClInclude Include="time.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

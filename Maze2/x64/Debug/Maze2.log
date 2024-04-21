@@ -1,9 +1,2 @@
-﻿  game.cpp
-  main.cpp
-  time.cpp
-  코드를 생성하고 있습니다...
-main.obj : error LNK2005: "int totalPlayTime" (?totalPlayTime@@3HA)이(가) game.obj에 이미 정의되어 있습니다.
-main.obj : error LNK2019: "void __cdecl myTime::InitTime(void)" (?InitTime@myTime@@YAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
-main.obj : error LNK2019: "void __cdecl myTime::UpdateTime(void)" (?UpdateTime@myTime@@YAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
-main.obj : error LNK2019: "void __cdecl PrintCountsPerSecond(void)" (?PrintCountsPerSecond@@YAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
-D:\개인공부\ConsoleMaze\Maze\x64\Debug\Maze2.exe : fatal error LNK1120: 3개의 확인할 수 없는 외부 참조입니다.
+﻿  main.cpp
+  Maze2.vcxproj -> D:\게임인재원\ConsoleMaze\Maze2\x64\Debug\Maze2.exe

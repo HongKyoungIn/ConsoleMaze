@@ -1,29 +1,38 @@
 #include "time.h"
-#include "Windows.h"
+#include <cmath>
+#include <Windows.h>
 
-namespace global {
-	namespace time {
-		ULONGLONG previousTime;
-		ULONGLONG currentTime;
-		ULONGLONG deltaTime;
+namespace myTime {
+	ULONGLONG previousTime;
+	ULONGLONG currentTime;
+	ULONGLONG deltaTime;
+	ULONGLONG playStartTime; // 플레이 시작 시간
 
-		int updateCount;
-		int fixedUpdateCount;
+	void InitTime() {
+		previousTime = currentTime = GetTickCount64();
+		playStartTime = previousTime;
+	}
 
-		void InitTime() {
-			previousTime = currentTime = GetTickCount64();
+	void UpdateTime() {
+		previousTime = currentTime;
+		currentTime = GetTickCount64();
+		deltaTime = currentTime - previousTime;
+	}
+
+	int PlayTime() {
+		int currentPlayTime = GetTickCount64() - playStartTime; // 현재 플레이 타임 계산
+		return currentPlayTime;
+	}
+
+	const float GetFrameRate() {
+		if(deltaTime == 0) {
+			return 0;
 		}
 
-		void UpdateTime() {
-			previousTime = currentTime;
+		return ceil(((1000.0f / deltaTime) * 1000) / 1000);
+	}
 
-			currentTime = GetTickCount64();
-
-			deltaTime = currentTime - previousTime;
-		}
-
-		ULONGLONG GetDeltaTime() {
-			return deltaTime;
-		}
+	const ULONGLONG GetDeltaTime() {
+		return deltaTime;
 	}
 }

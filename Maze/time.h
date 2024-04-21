@@ -2,7 +2,7 @@
 
 typedef unsigned __int64 ULONGLONG;
 
-namespace myTime {
+namespace myTime1 {
 	void InitTime();
 	void UpdateTime();
 	const float GetFrameRate();

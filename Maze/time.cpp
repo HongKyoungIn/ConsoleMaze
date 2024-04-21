@@ -2,7 +2,7 @@
 #include <cmath>
 #include <Windows.h>
 
-namespace myTime {
+namespace myTime1 {
 	ULONGLONG previousTime;
 	ULONGLONG currentTime;
 	ULONGLONG deltaTime;
